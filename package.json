@@ -1,0 +1,41 @@
+{
+  "name": "vibecoding-study-planner",
+  "version": "1.0.0",
+  "description": "AI 輔助學習計畫生成器 - 純前端 TDD 應用",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "test": "echo '打開瀏覽器訪問 http://localhost:8000 查看測試結果'",
+    "build": "echo '這是純前端應用，無需構建'"
+  },
+  "keywords": [
+    "study-planning",
+    "tdd",
+    "education",
+    "time-management"
+  ],
+  "author": "vibecoding team",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "5.3.0",
+    "gun": "0.2.x",
+    "dayjs": "1.11.x"
+  },
+  "devDependencies": {
+    "jasmine": "3.10.1"
+  },
+  "cdnLinks": {
+    "bootstrap": "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css",
+    "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+    "gun": "https://gun.js.org/gun.js",
+    "dayjs": "https://cdn.jsdelivr.net/npm/dayjs@1.11.0/dayjs.min.js",
+    "jasmine-core": "https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.1/jasmine.min.js",
+    "jasmine-html": "https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.1/jasmine-html.min.js"
+  },
+  "notes": {
+    "architecture": "純前端 + CDN 版本 JS 套件，無需任何後端服務",
+    "testing": "使用 Jasmine 3.10.1 進行單元測試和整合測試",
+    "storage": "使用 GUN.js 進行本地離線存儲",
+    "development": "使用 Python http.server 或任何靜態伺服器本地開發"
+  }
+}
